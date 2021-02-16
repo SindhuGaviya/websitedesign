@@ -9,6 +9,7 @@
 <body>
     <header>
         <a href="#" class="logo">Food<span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu()"></div> 
         <ul class="navigation">
            <li><a href="#banner">Home</a></li>
            <li><a href="#about">About</a></li>
@@ -40,7 +41,7 @@
         </div>
     </section>
 
-    <section class='menu' id='menu'>
+    <section class="menu" id="menu">
         <div class="title">
             <h2 class="textTitle">Our <span>M</span>enu</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
@@ -48,7 +49,7 @@
         <div class="content">
          <div class="box">
             <div class="imgBox">
-                <img src="img1.jpg">
+                <img src="img2.jpg">
             </div>
             <div class="text">
                <h2>Special Lorem</h2>
@@ -56,7 +57,7 @@
          </div>
          <div class="box">
             <div class="imgBox">
-                <img src="img1.jpg">
+                <img src="img2.jpg">
             </div>
             <div class="text">
                <h2>Special Lorem</h2>
@@ -64,7 +65,7 @@
          </div>
          <div class="box">
             <div class="imgBox">
-                <img src="img1.jpg">
+                <img src="img2.jpg">
             </div>
             <div class="text">
                <h2>Special Lorem</h2>
@@ -72,7 +73,23 @@
          </div>
          <div class="box">
             <div class="imgBox">
-                <img src="img1.jpg">
+                <img src="img2.jpg">
+            </div>
+            <div class="text">
+               <h2>Special Lorem</h2>
+            </div>
+         </div>
+         <div class="box">
+            <div class="imgBox">
+                <img src="img2.jpg">
+            </div>
+            <div class="text">
+               <h2>Special Lorem</h2>
+            </div>
+         </div>
+         <div class="box">
+            <div class="imgBox">
+                <img src="img2.jpg">
             </div>
             <div class="text">
                <h2>Special Lorem</h2>
@@ -84,11 +101,113 @@
         </div>
     </section>
 
+    <section class="expert" id="expert">
+        <div class="title">
+            <h2 class="textTitle">Our Kitchen <span>E</span>xpert</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+        <div class = "content">
+            <div class="box">
+              <div class="imgBox">
+                  <img src="img1.jpg">
+              </div>
+              <div class="text">
+                  <h2>Someone famous</h2>
+              </div>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="img1.jpg">
+                </div>
+                <div class="text">
+                    <h2>Someone famous</h2>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="img1.jpg">
+                </div>
+                <div class="text">
+                    <h2>Someone famous</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <div class="title white">
+            <h2 class="textTitle">They <span>S</span>aid About Us</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgBox">
+                    <img src="img2.jpg">
+                </div>
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aut sint optio amet suscipit ducimus, exercitationem quos distinctio cumque eum earum asperiores temporibus esse accusantium iure ex quo nesciunt praesentium?</p>
+                    <h3>Someone Famous</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="img2.jpg">
+                </div>
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aut sint optio amet suscipit ducimus, exercitationem quos distinctio cumque eum earum asperiores temporibus esse accusantium iure ex quo nesciunt praesentium?</p>
+                    <h3>Someone Famous</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="img2.jpg">
+                </div>
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aut sint optio amet suscipit ducimus, exercitationem quos distinctio cumque eum earum asperiores temporibus esse accusantium iure ex quo nesciunt praesentium?</p>
+                    <h3>Someone Famous</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="title">
+            <h2 class="textTitle"><span>C</span>ontact Us</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+        <div class="contactForm">
+            <h3>Send Message</h3>
+            <div class="inputBox">
+                <input type="text" placeholder="Name"/>
+            </div>
+            <div class="inputBox">
+                <input type="text" placeholder="Email"/>
+            </div>
+            <div class="inputBox">
+                <textarea placeholder="Name"></textarea>
+            </div>
+            <div class="inputBox">
+                <input type="submit" placeholder="Send"/>
+            </div>
+        </div>
+    </section>
+
+    <div class="copyRightText">
+        <p>Copyright 2020 <a href="#">Tutorials</a>.All Right Reserved</p>
+    </div>
+
     <script type="text/javascript"> 
       window.addEventListener('scroll',function(){
           const header = document.querySelector('header')
           header.classList.toggle('sticky', window.scrollY > 0)
       })
+
+      function toggleMenu(){
+          const menuToggle = document.querySelector('.menuToggle');
+          const navigation = document.querySelector('navigation');
+          menuToggle.classList.toggle('active');
+          navigation.classList.toggle('active');
+      }
     </script>
 </body>
 </html>
